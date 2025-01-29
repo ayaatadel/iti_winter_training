@@ -1,0 +1,7 @@
+===> histroy about js
+==> where to write js code
+==> variables 
+==> data types
+==> types operators
+==> conditional flow
+==> loops

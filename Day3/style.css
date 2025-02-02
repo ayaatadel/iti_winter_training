@@ -1,0 +1,25 @@
+.cardStyle{
+    margin:5px;
+    width:150px;
+    text-align:center;
+    border:1px solid #b2afaf;
+    background-color:#f3eeee;
+    padding:2px;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
+
+.textStyle{
+    
+      padding:2px;
+      color:rgb(146, 146, 194);
+      text-align:center
+}
+.imgStyle{
+width:50px;
+height:50px;
+border-radius:3px;
+}

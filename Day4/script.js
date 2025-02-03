@@ -11,23 +11,23 @@
     
 // // }
 
-let arr=['al',12]
+// let arr=['al',12]
 
-let produncts = [
-    {
-      name: "pizza",
-      image: "https://images.pexels.com/photos/13471546/pexels-photo-13471546.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    },
-    {
-      name: "folower",
-      image: "https://images.pexels.com/photos/15295923/pexels-photo-15295923/free-photo-of-bouquet-of-flowers-in-clothing-with-feelings-written-on-it.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    },
-    {
-      name: "coffe",
-      image:
-        "https://images.pexels.com/photos/29781721/pexels-photo-29781721/free-photo-of-cozy-coffee-with-open-book-and-vintage-spoon.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    },
-  ];
+// let produncts = [
+//     {
+//       name: "pizza",
+//       image: "https://images.pexels.com/photos/13471546/pexels-photo-13471546.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+//     },
+//     {
+//       name: "folower",
+//       image: "https://images.pexels.com/photos/15295923/pexels-photo-15295923/free-photo-of-bouquet-of-flowers-in-clothing-with-feelings-written-on-it.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+//     },
+//     {
+//       name: "coffe",
+//       image:
+//         "https://images.pexels.com/photos/29781721/pexels-photo-29781721/free-photo-of-cozy-coffee-with-open-book-and-vintage-spoon.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+//     },
+//   ];
 
 //   for (let index = 0; index < produncts.length; index++) {
 //    console.log( produncts[index]['name']);
@@ -178,11 +178,11 @@ let produncts = [
 
 // self invoked function  ==> call by it self
 
-(function ()
-{
-    console.log("self invoked");
+// (function ()
+// {
+//     console.log("self invoked");
     
-})();
+// })();
 
 
 // 
@@ -203,17 +203,225 @@ let produncts = [
 //0===================>
 
     // arrow function
-    let x=()=>{
-        return 1
-    }
+//     let x=()=>{
+//         return 1
+//     }
 
-    //  let x=()=>1;
-   let z=_=>'hello';
-   console.log(z());
+//     //  let x=()=>1;
+//    let z=_=>'hello';
+//    console.log(z());
    
 
 
-    let y=(name,age)=>console.log(name,age);
-    y("iti",30)
-    let q=name=>console.log(name);
-    q("iti")
+//     let y=(name,age)=>console.log(name,age);
+//     y("iti",30)
+//     let q=name=>console.log(name);
+//     q("iti")
+
+
+// array api ==> iterations on array
+
+// for , for of , for in
+// for each
+
+// let produncts = [
+//     {
+//       name: "pizza",
+//       image: "https://images.pexels.com/photos/13471546/pexels-photo-13471546.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+//     },
+//     {
+//       name: "folower",
+//       image: "https://images.pexels.com/photos/15295923/pexels-photo-15295923/free-photo-of-bouquet-of-flowers-in-clothing-with-feelings-written-on-it.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+//     },
+//     {
+//       name: "coffe",
+//       image:
+//         "https://images.pexels.com/photos/29781721/pexels-photo-29781721/free-photo-of-cozy-coffee-with-open-book-and-vintage-spoon.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+//     },
+//   ];
+
+
+let arr=["iti","ui","php"]
+
+// for (let index = 0; index < arr.length; index++) {
+//   console.log(arr[index]);
+  
+// }
+
+// for(let ele of arr) {
+//     console.log(ele);
+    
+// }
+
+// // for each===> arrName.forEach((element){})==> call back function
+// arr.forEach(element => {
+//     console.log(element);
+// });
+
+// arr.forEach(function(item , index)
+// {
+//    console.log(index,":",item);
+   
+// })
+
+// map ==> return array ==> length ==> main arry
+
+// let result=arr.map(function(item,index){
+//     // console.log(index,':',item);
+//     if(item=="iti")
+//     {
+//     return (item);
+     
+//     }
+    
+// }) 
+
+// filter ==> iteration array ==>return =>array=> values run condition 
+
+// let res=arr.filter(function(item,index){
+//     // console.log(index,':',item);
+//     if(item=="iti")
+//     {
+//     return (item);
+     
+//     }
+    
+// }) 
+// console.log(res);
+
+
+// 
+// let arr1=[1,2,3]
+// let arr2=arr1
+// arr1.push(5)
+// arr1.push("iti")
+// console.log(arr2); 
+// console.log(arr1); 
+
+// arr2.push(12)
+// arr2.push("tracks")
+// console.log(arr1); 
+// console.log(arr2); 
+
+//*************************   array , object ==> refrence data type ==>  */
+// spread operator  ==> ... ==> values
+
+// let arr1=[1,2,3]
+// let arr2=[...arr1]
+// arr1.push(5)
+// arr1.push("iti")
+// console.log(arr2); // 1,2,3
+// console.log(arr1); // 1,2,3,5,iti
+
+// arr2.push(12)
+// arr2.push("tracks")
+// console.log(arr1); // 1,2,3,5,iti
+// console.log(arr2); // 1,2,3,12,tracks
+
+// let person1={name:"mohammed",age:22}
+// let person2={...person1}
+// person2.address="cairo"
+// person1.faculty="CS"
+
+// console.log(person1);
+// console.log(person2);
+
+// https://developer.mozilla.org/en-US/docs/Web/API/EventTarget
+// Event ==> action ==> elemnt in html
+
+// function clickMe()
+// {
+//     console.log("Track Ui");
+    
+// }
+
+
+// onEvent ==> elemnt.onclick=function(){}
+// let btn=document.getElementById("btn")
+// btn.onclick=function()
+// {
+//     console.log("hello");
+    
+// }
+// btn.onmouseover=function()
+// {
+//     console.log("event");
+    
+// }
+
+// btn.onclick=clickMe
+
+// btn.onclick=()=>
+// {
+//     console.log("iti");
+    
+// }
+// btn.onclick=_=>
+// {
+//     console.log("hello");
+    
+// }
+// btn.onclick=_=>console.log("hello");
+
+
+// addEventListender
+
+// btn.addEventListener('click',function(){
+//     console.log("hello"); 
+// })
+// btn.addEventListener('click',function(){
+//     console.log("iti");
+// })
+// btn.addEventListener('click',()=>{
+//     console.log("iti");
+// })
+// btn.addEventListener('click',_=>console.log("iti"))
+
+
+/**
+ * btn.onclick
+ * onEvent ==> if has more than same event on same elemnt ==>execute last event
+ *btn.addEventListener('eventName',funtion(){
+ })
+* addEventListener==>if has more than same event on same elemnt ==>execute all events
+ */
+
+// btn.addEventListener('click',(e)=>{
+//     console.log(e.target);
+//     console.log(e);
+// })
+// btn.addEventListener('mouseover',(e)=>{
+//     console.log(e.target);
+//     console.log(e);
+// })
+
+// btn.removeEventListener('click',clickHandler)
+
+
+// document.body.addEventListener('mouseover',(e)=>{
+//     // console.log("hello");
+//     console.log(e.target);
+    
+// })
+
+// mouse ======> mousein , mouseup , mouseover, mousemove
+// focus , blur
+//keyboard===>keyup  keydown
+// browser==> onload
+
+// window.addEventListener('load',(e)=>{
+//     alert('welcome')
+//     btn.style=`color:red`
+//     console.log(e.target);
+    
+
+// })
+
+
+// btn.addEventListener('mouseover',(e)=>{
+//     // console.log(e.target);
+//     // console.log(e);
+//     alert('welcome')
+// })
+
+

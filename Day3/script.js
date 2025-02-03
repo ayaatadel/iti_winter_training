@@ -204,6 +204,8 @@ function createCard(imgSrc, pgText) {
   // `
   var img = document.createElement("img");
   img.src = `${imgSrc}`;
+  img.style.width='30px';
+  img.style.height='30px';
   img.classList.add("imgStyle");
 
   // append childs

@@ -423,5 +423,11 @@ let arr=["iti","ui","php"]
 //     // console.log(e);
 //     alert('welcome')
 // })
+let nameInput=document.getElementById('name')
 
 
+nameInput.addEventListener('change',(e)=>{
+    // console.log(nameInput.value);
+ console.log(   e.target.value);
+ 
+})

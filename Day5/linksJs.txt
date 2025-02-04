@@ -1,3 +1,6 @@
 https://www.javatpoint.com/javascript-tutorial
 
 https://www.javascripttutorial.net/javascript-bom/
+
+https://maharatech.gov.eg/course/view.php?id=741==> couser js maharatech
+https://maharatech.gov.eg/course/view.php?id=791==> ES6

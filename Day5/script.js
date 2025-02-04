@@ -3,6 +3,7 @@
  * destructure
  * restparams
  * BOM
+ * storage
  */
 
 // function Synchrouns  ==> line by line
@@ -158,40 +159,51 @@
 // })
 
 // Reference to the buttons in the DOM
-const btnOpen = document.getElementById('btnOpen'); // Replace with your button's ID
-const btnClose = document.getElementById('btnClose'); // Replace with your button's ID
+// const btnOpen = document.getElementById('btnOpen'); // Replace with your button's ID
+// const btnClose = document.getElementById('btnClose'); // Replace with your button's ID
 
-// Variable to store the reference to the opened window
-let jsWindow = null;
+// // Variable to store the reference to the opened window
+// let jsWindow = null;
 
-// Event listener for the "Open" button
-btnOpen.addEventListener('click', () => {
-    // Open a new window and store its reference
-    jsWindow = window.open(
-        'http://127.0.0.1:5500/Day5/about.html', // URL to open
-        'about', // Window name
-        'height=600,width=600' // Window features
-    );
+// // Event listener for the "Open" button
+// btnOpen.addEventListener('click', () => {
+//     // Open a new window and store its reference
+//     jsWindow = window.open(
+//         'http://127.0.0.1:5500/Day5/about.html', // URL to open
+//         'about', // Window name
+//         'height=600,width=600' // Window features
+//     );
 
-    // Check if the window was successfully opened
-    if (!jsWindow) {
-        console.error('The window could not be opened. Please check your popup blocker settings.');
-    }
-});
+//     // Check if the window was successfully opened
+//     if (!jsWindow) {
+//         console.error('The window could not be opened. Please check your popup blocker settings.');
+//     }
+// });
 
-// Event listener for the "Close" button
-btnClose.addEventListener('click', () => {
-    // Check if the window exists and is open
-    if (jsWindow && !jsWindow.closed) {
-        // Close the window after a 2-second delay
-        setTimeout(() => {
-            jsWindow.close();
-            console.log('Window closed.');
-        }, 2000);
-    } else {
-        console.warn('The window is already closed or was never opened.');
-    }
-});
+// // Event listener for the "Close" button
+// btnClose.addEventListener('click', () => {
+//     // Check if the window exists and is open
+//     if (jsWindow && !jsWindow.closed) {
+//         // Close the window after a 2-second delay
+//         setTimeout(() => {
+//             jsWindow.close();
+//             console.log('Window closed.');
+//         }, 2000);
+//     } else {
+//         console.warn('The window is already closed or was never opened.');
+//     }
+// });
 
 
+// storage   ==> browser
+// localStorage , cookies , session 
 
+localStorage.setItem('track','UI')
+console.log(localStorage.getItem('track'));
+
+// JSON.parse()
+// JSON.stringify()
+// object products 
+// function 
+//setInterval ==> generate function ==> 10 product==> card
+// add to cart ==>
